@@ -1,7 +1,7 @@
 import streamlit as st
 import joblib
 
-model = joblib.load('/content/Paris_Housing_Prediction.pkl')
+model = joblib.load('Paris_Housing_Prediction.pkl')
 
 st.title('Paris Housing Price Prediction')
 st.write('Predict the house price in Paris')
