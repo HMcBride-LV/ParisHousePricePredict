@@ -19,7 +19,7 @@ isNewBuilt = st.checkbox('New Build?')
 hasStormProtector	= st.checkbox('Has Storm Protectors')
 basement = st.number_input('Enter Desired Basement Size in Square Meters')
 attic = st.number_input('Enter Desired Attic Size in Square Meters')
-garage = st.number_input('Enter Desired Attic Size in Square Meters')
+garage = st.number_input('Enter Desired Garage Size in Square Meters')
 hasStorageRoom = st.checkbox('Has Storage Room')
 hasGuestRoom = st.number_input('Enter Desired Number Of Guest Rooms')
 
