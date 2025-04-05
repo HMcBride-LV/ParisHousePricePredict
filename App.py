@@ -24,7 +24,7 @@ hasStorageRoom = st.checkbox('Has Storage Room')
 hasGuestRoom = st.number_input('Enter Desired Number Of Guest Rooms')
 
 if st.button('Predict Price'):
-  features = [[
+  features = np.array([[
     squareMeters, 
     numberOfRooms, 
     hasYard, 
@@ -41,7 +41,7 @@ if st.button('Predict Price'):
     garage, 
     hasStorageRoom, 
     hasGuestRoom
-  ]]
+  ]])
 
-  prediction = model.predict(features)[0]
+  prediction = model.predict(features)[0][0]
   st.write(f'Your predicted price is: {prediction}')
