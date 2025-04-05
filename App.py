@@ -24,23 +24,24 @@ hasStorageRoom = st.checkbox('Has Storage Room')
 hasGuestRoom = st.number_input('Enter Desired Number Of Guest Rooms')
 
 if st.button('Predict Price'):
-  features = 
-  [[squareMeters, 
-  numberOfRooms, 
-  hasYard, 
-  hasPool, 
-  floors, 
-  cityCode, 
-  cityPartRange, 
-  numPrevOwners, 
-  made, 
-  isNewBuilt, 
-  hasStormProtector, 
-  basement, 
-  attic, 
-  garage, 
-  hasStorageRoom, 
-  hasGuestRoom]]
+  features = [[
+    squareMeters, 
+    numberOfRooms, 
+    hasYard, 
+    hasPool, 
+    floors, 
+    cityCode, 
+    cityPartRange, 
+    numPrevOwners, 
+    made, 
+    isNewBuilt, 
+    hasStormProtector, 
+    basement, 
+    attic, 
+    garage, 
+    hasStorageRoom, 
+    hasGuestRoom
+  ]]
 
   prediction = model.predict([features])[0]
   st.write(f'Your predicted price is: {prediction}')
