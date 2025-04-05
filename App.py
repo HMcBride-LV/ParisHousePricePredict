@@ -43,5 +43,5 @@ if st.button('Predict Price'):
     hasGuestRoom
   ]]
 
-  prediction = model.predict([features])[0]
+  prediction = model.predict(features)[0]
   st.write(f'Your predicted price is: {prediction}')
